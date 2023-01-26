@@ -1,22 +1,17 @@
-# Many Values to Multiple Variables
-x, y, z = "Orange", "Banana", "Cherry"
-print(x)
-print(y)
-print(z)
-# One Value to Multiple Variables
-x = y = z = "Orange"
-print(x)
-print(y)
-print(z)
+# Variables are containers for storing data values.
+# A variable is created the moment you first assign a value to it.
+# Variables do not need to be declared with any particular type, and can even change type after they have been set.
+x = 5
+y = "John"
+# String variables can be declared either by using single or double quotes
+z = 'Rudra'
+# Case Sensitive
+X = "Sally"
+# You can get the data type of a variable with the type() function.
+print(type(x))
+print(type(y))
 
-# Unpack a Collection
-fruits = ["apple", "banana", "cherry"]
-x, y, z = fruits
-print(x)
-print(y)
-print(z)
-
-# Output Variables, The Python print() function is often used to output variables.
-# Try your self different output using print
-
-# Global Variables - we will learn when we learn functions and blocks
+# If you want to specify the data type of a variable, this can be done with casting.
+x = str(3)    # x will be '3'
+y = int(3)    # y will be 3
+z = float(3)  # z will be 3.0
