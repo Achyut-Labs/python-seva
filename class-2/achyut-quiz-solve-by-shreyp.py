@@ -3,7 +3,7 @@
 #it was medium 
 #i rated the puzzle 6/10 p
 
-#good joob but i did show you the answers when you came to my house
+#good job from achyut 
 
 print("hello world")
 
