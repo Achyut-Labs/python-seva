@@ -15,5 +15,5 @@ myVariableName = "John"    # Camel Case
 # Each word starts with a capital letter
 MyVariableName = "John"    # Pascal Case
 # Each word is separated by an underscore character
-my_variable_name = "John"
+my_variable_name = "John"  # Snake Case
 
