@@ -10,7 +10,7 @@ print(y)
 print(z)
 
 # Unpack a Collection
-fruits = ["apple", "banana", "cherry"]
+fruits = ["animals", "hello", "tiger"]
 x, y, z = fruits
 print(x)
 print(y)
