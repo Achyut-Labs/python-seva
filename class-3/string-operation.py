@@ -1,7 +1,6 @@
-x = "my first day opf school was good"
+x = "my first day of school was great"
 
-[start, stop, step]
 
-x[1]
 
-print
+print(x[16:22])
+
