@@ -39,11 +39,12 @@ thislist = ["apple", "banana", "cherry"]
 if "apple" in thislist:
 ```
 list has different function as below<br>
+Ordered List :-
 ***insert***
 ***append***
 ***extend***
 ***remove***
-**pop***
+***pop***
 ***clear***
 ***sort***
 ***reverse***
