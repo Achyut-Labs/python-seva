@@ -30,14 +30,41 @@ From Python's perspective, lists are defined as objects with the data type 'list
 <class 'list'>
 ```
 
+<br>List can be accessed using positive index or negative index, list[0]  present the first item and list[-1] refers to last item.<br>
+Index can be range using [start:end -1],  start index value included but end index is not included when specify the range<br>
 
-
-
-
+Check if item exist using if and in or not in  keywords <br>
+```
+thislist = ["apple", "banana", "cherry"]
+if "apple" in thislist:
+```
+list has different function as below<br>
+***insert***
+***append***
+***extend***
+***remove***
+**pop***
+***clear***
+***sort***
+***reverse***
+***copy***
 
 
 
 
 ## Tuple
+```
+mytuple = ("apple", "banana", "cherry")
+```
 ## Set
+```
+myset = {"apple", "banana", "cherry"}
+```
 ## Dictionary
+```
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+```

@@ -20,4 +20,6 @@ for x in y:
 list = ["apple", True, 5]
 print(list)
 
+list.insert(2, "watermelon")
 
+print(list)
