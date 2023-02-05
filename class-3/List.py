@@ -16,3 +16,8 @@ print(x)
 for x in y:
     for y in x:
         print(y)
+
+list = ["apple", True, 5]
+print(list)
+
+
