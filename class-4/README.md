@@ -25,7 +25,7 @@ List items can be of any data type, A list can contain different data types,
 ```
 list = ["apple", True, 5]
 ```
-From Python's perspective, lists are defined as objects with the data type 'list'
+From Python's perspective, lists are defined as objects with the data type 'list'  
 ```
 <class 'list'>
 ```
