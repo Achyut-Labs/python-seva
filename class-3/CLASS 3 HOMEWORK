@@ -1,0 +1,57 @@
+
+
+#test 1
+x='monday''tuesday''wednesday'
+for y in x:
+    print(y)
+print(y)
+print(y)
+print(y)
+
+#test2
+x= 'Monday' 'Tuesday' 'Wednesday'
+
+for y in x: 
+    print (y)
+print(y)   
+
+
+#test3
+x=['monday', 'tuesday', 'wednesday']
+
+for y in x:
+    print(y)
+print(y)
+
+for y in x:
+    for x in y:
+      print(x)
+print(x)
+
+x=['monday ', 'tuesday ', 'wednesday ']
+
+
+
+#test 4
+x='monday', 'tuesday', 'wednesday'
+
+for y in x:
+    print(y)
+print(y)
+
+x='monday ''tuesday ''wednesday '
+for y in x:
+    print(y)
+print(y)
+
+
+for y in x:
+    print(y)
+print(y)
+
+for y in x:
+    for x in y:
+      print(x)
+print(x)
+   
+#
