@@ -30,6 +30,7 @@ print(x)
 
 x=['monday ', 'tuesday ', 'wednesday ']
 
+<<<<<<< Updated upstream
 
 
 #test 4
@@ -45,6 +46,8 @@ for y in x:
 print(y)
 
 
+=======
+>>>>>>> Stashed changes
 for y in x:
     print(y)
 print(y)
