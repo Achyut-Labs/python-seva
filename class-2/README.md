@@ -1,4 +1,7 @@
 # Ojectives of this lession - Class - 2
+**Learn about Git and GitHub**<br>
+**Syntax**
+**Comments**
 **Variables**<br>
 What are variables:
 Variables are like storage units for data and things like strings,integers,floats and sprites.A variable can be short like a character or a string of words. Variables can be used to represent what is stored in it like a word or sentence.

@@ -1,4 +1,8 @@
 # Ojectives of this lession - Class - 3
+**Strings**<br>
+**Numbers**<br>
+**Boolens**<br>
+**Type Conversion**<br>
 **Understand the basics of Collection**<br>
 List is a collection which is ordered and changeable. Allows duplicate members.
 Tuple is a collection which is ordered and unchangeable. Allows duplicate members.
