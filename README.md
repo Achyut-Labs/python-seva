@@ -11,5 +11,5 @@ You can visualize the python code execution on below webiste and its very good t
 https://pythontutor.com/
 
 ## Other Source of learning
-https://www.pythontutorial.net/
-https://www.w3schools.com/python/default.asp
+https://www.pythontutorial.net/  <br>
+https://www.w3schools.com/python/default.asp  <br>
