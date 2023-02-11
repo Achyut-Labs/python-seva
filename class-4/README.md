@@ -1,3 +1,5 @@
+# Ojectives of this lession - Class - 4
+**Learn all about List**<br>
 # Python Collections (Arrays)
 There are four collection data types in the Python programming language:
 Ordered List :-
