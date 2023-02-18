@@ -28,5 +28,5 @@ print(b)
 '''
 
 
-print(21//3)
->>>>>>> Stashed changes
+print(21/3)
+
