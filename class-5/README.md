@@ -17,6 +17,7 @@ Python divides the operators in the following groups,
 ## Learn about Operator Precedence
 
 | Operator   |   Description  |
+|-----------:|----------------|
 | ()	| Parentheses |
 | **	| Exponentiation |
 | +x  -x  ~x	| Unary plus, unary minus, and bitwise NOT |
@@ -25,7 +26,7 @@ Python divides the operators in the following groups,
 | <<  >>	| Bitwise left and right shifts |
 | &	 | Bitwise AND |
 | ^	 | Bitwise XOR |
-| |	 | Bitwise OR  |
+| \|	 | Bitwise OR  |
 | ==  !=  >  >=  <  <=  is  is not  in  not in 	| Comparisons, identity, and membership operators |
 | not	| Logical NOT |
 | and	| AND |
