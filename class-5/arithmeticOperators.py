@@ -26,7 +26,7 @@ print(g%h)
 #Exponentiation(power of)
 i= 4
 j= 3
-print(4**3)
+print(4**3)n
 
 #Floor Division(rounds the result down to the nearest whole number)
 k= 16
