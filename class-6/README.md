@@ -1,5 +1,6 @@
 # Ojectives of this lession - Class - 6
-##Control flow##
+
+## Control flow ##
 **if else statement**<br>
 **Ternary Operator**<br>
 **for loop with range()**<br>
