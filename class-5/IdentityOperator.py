@@ -1,12 +1,15 @@
 x = 5
 y = 2
+z= x*y
+a= 10
+b= 13
 
-if x is y:
-    print("x is passed")
+if z is a:
+    print("correct")
 else:
-    print("x is not passed")
+    print("wrong")
 
-if x is not y:
-    print("x is passed")
+if z is not b:
+    print("correct again")
 else:
-    print("x is not passed")
+    print("wrong again")
