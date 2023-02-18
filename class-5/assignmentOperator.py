@@ -1,50 +1,51 @@
-x = 5
+x = 6
 print(x)
 
-x = 5
-x += 5
+x = 6
+x += 6
 print(x)
 
-x = 5
-x -= 5
+x = 6
+x -= 6
 print(x)
 
-x = 5
-x *= 5
+x = 6
+x *= 6
 print(x)
 
-x = 5
-x /= 5
+x = 6
+x /= 6
 print(x)
 
-x = 5
-x %= 5
+x = 6
+x %= 6
 print(x)
 
-x = 5
-x //= 5
+x = 6
+x //= 6
 print(x)
 
-x = 5
-x **= 5
+x = 6
+x **= 6
 print(x)
 
-x = 5
-x &= 5
+x = 6
+x &= 6
 print(x)
 
-x = 5
-x |= 5
+x = 6
+x |= 6
 print(x)
 
-x = 5
-x ^= 5
+x = 6
+x ^= 6
 print(x)
 
-x = 5
-x >>= 5
+x = 6
+x >>= 6
 print(x)
 
+<<<<<<< Updated upstream
 x = 5
 x <<= 5
 print(x)
@@ -62,3 +63,8 @@ a /= 34
 
 d = 1204
 d *= 1204
+=======
+x = 6
+x <<= 6
+print(x)
+>>>>>>> Stashed changes
