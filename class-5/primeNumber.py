@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 x = input("Enter the number to find all prime numbers less than that number:")
 
@@ -26,3 +27,9 @@ for i in range (0,x):
         result.append(i)
 print(result)
 >>>>>>> 9f5b0b45477596152b8c12b56130d0ea4608882e
+=======
+
+
+a= 0
+for x in 0 :range(x)
+>>>>>>> Stashed changes
