@@ -14,20 +14,20 @@ Python divides the operators in the following groups,
 <li>Bitwise operators</li>
 </ul>
 
-## Learn about Operator Precedence
+## Operator Precedence, see table from top to bottom
 
-| Operator   |   Description  |
-|-----------:|----------------|
-| ()	| Parentheses |
-| **	| Exponentiation |
-| +x  -x  ~x	| Unary plus, unary minus, and bitwise NOT |
-| * /  //  %	| Multiplication, division, floor division, and modulus |
-| + - | Addition and subtraction |
-| <<  >>	| Bitwise left and right shifts |
-| &	 | Bitwise AND |
-| ^	 | Bitwise XOR |
-| \|	 | Bitwise OR  |
-| ==  !=  >  >=  <  <=  is  is not  in  not in 	| Comparisons, identity, and membership operators |
-| not	| Logical NOT |
-| and	| AND |
-| or	| OR  |
+| precedence | Operator   |   Description  |
+|------------|-----------:|----------------|
+| 1| ()	| Parentheses |
+| 2| **	| Exponentiation |
+| 3| +x  -x  ~x	| Unary plus, unary minus, and bitwise NOT |
+| 4| * /  //  %	| Multiplication, division, floor division, and modulus |
+| 5| + - | Addition and subtraction |
+| 6| <<  >>	| Bitwise left and right shifts |
+| 7| &	 | Bitwise AND |
+| 8| ^	 | Bitwise XOR |
+| 9| \|	 | Bitwise OR  |
+| 10| ==  !=  >  >=  <  <=  is  is not  in  not in 	| Comparisons, identity, and membership operators |
+| 11| not	| Logical NOT |
+| 12| and	| AND |
+| 13| or	| OR  |
