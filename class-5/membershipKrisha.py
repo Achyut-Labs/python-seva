@@ -16,4 +16,6 @@ else:
     b = (1,2,7,14)
 
 if a in b:
-    print("")
+    print("a is in b")
+else: 
+    print("a is not in b" )
