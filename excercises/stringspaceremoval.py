@@ -4,7 +4,7 @@ x = "my first day of school was good"
 
 for y in x:
     if y ==  " ":
-        continue
+        break
     print(y)
 
 
