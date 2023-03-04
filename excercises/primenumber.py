@@ -24,6 +24,34 @@ elif num > 1:
     else:
         print(num, "is a prime number")
 
+yieldfy
+
+yr
+yieldy
+rtyr
+yieldr
+tryt
+finallyf
+FileNotFoundError
+
+finallyf
+finallyf
+FileNotFoundErrorff
+f
+finallyf
+finallyf
+finallyz
+finallydh
+j
+j
+hasattrg
+s
+setattrs
+x
+
+
+DeprecationWarningd
+def
 
 
 
@@ -106,4 +134,4 @@ elif num > 1:
             yieldrty
 
             yield
-            
+
