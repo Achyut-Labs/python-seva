@@ -1,4 +1,4 @@
-sentence= ("Durva is a 12 year old girl. Durva is good at oragami, and baking. Durva has many friends.")
+str_x = "Emma is good developer. Emma is a writer"
 
 
-print(sentence.count("Durva"))
+print(str_x.count("Emma"))
