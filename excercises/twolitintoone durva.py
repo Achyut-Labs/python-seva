@@ -16,3 +16,24 @@ for i in rain:
         rainbow.append (i)
 
 print(rainbow)  
+y
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#:D
