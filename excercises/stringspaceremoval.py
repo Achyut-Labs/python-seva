@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 # Take sentences as input and print each character one by one however remove the space if any in sentence.
 
 
@@ -18,3 +19,4 @@ for char in myString:
       continue
 print(char)
 
+    
