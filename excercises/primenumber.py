@@ -2,7 +2,7 @@
 num = int(input("Enter a number: "))
 
 # define a flag variable
-flag = False
+#flag = False
 
 if num == 1:
     print(num, "is not a prime number")
