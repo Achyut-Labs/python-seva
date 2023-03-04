@@ -16,11 +16,4 @@ for i in rain:
         rainbow.append (i)
 
 print(rainbow)  
-
-
-
-<<<<<<< Updated upstream
-#:D
-=======
-njkihvbhivh
->>>>>>> Stashed changes
+y do you not eat crust
