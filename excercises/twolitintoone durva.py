@@ -19,4 +19,8 @@ print(rainbow)
 
 
 
+<<<<<<< Updated upstream
 #:D
+=======
+njkihvbhivh
+>>>>>>> Stashed changes
