@@ -16,4 +16,22 @@ for i in rain:
         rainbow.append (i)
 
 print(rainbow)  
-y do you not eat crust
+y
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
