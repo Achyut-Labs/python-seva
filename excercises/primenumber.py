@@ -1,3 +1,6 @@
+#cricket hates you
+# it loves me
+# ha ah aa
 # To take input from the user
 num = int(input("Enter a number: "))
 
@@ -20,3 +23,87 @@ elif num > 1:
         print(num, "is not a prime number")
     else:
         print(num, "is a prime number")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        FileExistsError
+
+        r
+        t
+        rt
+
+        try
+            t
+
+            EncodingWarningw
+            rs
+            setg
+            sdf
+            globalg
+
+            while
+            raiset
+
+            tryeta
+
+
+            global
+            raiseer
+
+            elift
+            exit
+            tryt
+            tryt
+            tryt
+
+            FileExistsError
+
+            defdd
+            def
+
+            returnre
+            tryy
+            ytu
+
+            UnboundLocalErrort
+            r
+
+            setattrr
+            yieldrty
+
+            yield
+            
