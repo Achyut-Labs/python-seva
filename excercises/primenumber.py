@@ -1,3 +1,6 @@
+#cricket hates you
+# it loves me
+# ha ah aa
 # To take input from the user
 num = int(input("Enter a number: "))
 
