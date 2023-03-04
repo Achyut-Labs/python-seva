@@ -1,11 +1,8 @@
-#cricket hates you
-# it loves me
-# ha ah aa
 # To take input from the user
 num = int(input("Enter a number: "))
 
 # define a flag variable
-#flag = False
+flag = False
 
 if num <= 1:
     print(num, "is not a prime number")
@@ -23,24 +20,5 @@ elif num > 1:
         print(num, "is not a prime number")
     else:
         print(num, "is a prime number")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
