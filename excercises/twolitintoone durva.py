@@ -16,8 +16,27 @@ for i in rain:
         rainbow.append (i)
 
 print(rainbow)  
+y
 
 
 
 
-#:D
+
+
+
+
+
+
+
+
+
+
+
+
+
+<<<<<<< HEAD
+#:Djfeg8fieyewy8riedw
+slay queen
+=======
+
+>>>>>>> 500f81b6c93deffb439d2a0bc2ec08206d0f4550
