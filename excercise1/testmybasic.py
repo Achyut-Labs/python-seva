@@ -6,7 +6,3 @@ negative_emotion = ["angry", "afraid", "anxious", "confused", "depressed", "dest
 positive_emotion = ["happy", "attractive", "awake", "comfortable", "confident", "content", "curious", "excited", "peaceful", "pleasant"]
 
 
-
-
-
-
