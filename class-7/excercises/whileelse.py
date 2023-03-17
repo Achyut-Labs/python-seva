@@ -4,7 +4,7 @@ basket = [
     {'fruit': 'orange', 'qty': 10}
 ]
 
-fruit = input('Enter a fruit:')
+fruit = input('Mangot:')
 
 index = 0
 
