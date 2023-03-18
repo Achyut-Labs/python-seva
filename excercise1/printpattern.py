@@ -35,6 +35,7 @@ for b in a:           # This is a for loop inside a loop which continues until o
                     print(f) 
 
                     print(f)
+
 '''
 n = 5
 k = 5
