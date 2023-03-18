@@ -32,7 +32,3 @@ for b in a:           # This is a for loop inside a loop which continues until o
 
                 for f in e:
                     print(f) 
-                    
-                    
-
-
