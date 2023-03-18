@@ -31,4 +31,8 @@ for b in a:           # This is a for loop inside a loop which continues until o
                 e = ['1']
 
                 for f in e:
-                    print(f)
+                    print(f) 
+                    
+                    
+
+
