@@ -12,3 +12,12 @@ Expected output:
 9
 10
 '''
+
+
+
+max = 11                             
+counter = 1                        
+
+while counter < max:                
+    print(counter)                   
+    counter += 1
