@@ -15,4 +15,4 @@ for i in rain:
     if i %2  == 0:
         rainbow.append (i)
 
-print(rainbow)  
+print(rainbow)
