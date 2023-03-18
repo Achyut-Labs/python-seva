@@ -8,9 +8,9 @@ Write a program to use for loop to print the following reverse number pattern
 1
 
 '''
-a = ['5 4 3 2 1']
+a = ['5 4 3 2 1']     # This is a list
 
-for b in a:
+for b in a:           # This is a for loop inside a loop which continues until our goal is achieved.
     print(b)
 
     b = ['4 3 2 1']
