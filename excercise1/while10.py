@@ -21,3 +21,13 @@ counter = 1
 while counter < max:                
     print(counter)                   
     counter += 1
+    
+    
+# Achyut Did this
+dead = 11                              
+insane = 1                       
+
+while insane < dead: #goes through the loop until condition is false.             
+    print(insane) # prints the number every time               
+    insane += 1 # adds one number everytime
+
