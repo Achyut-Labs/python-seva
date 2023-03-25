@@ -8,13 +8,6 @@ For example, if the user entered 10 the output should be 55 (1+2+3+4+5+6+7+8+9+1
 
 '''
 
-# Achyut Did This
-input = input('Enter a number: ')
-x = 0
-
-for n in range(1, int(input)+1):
-  x = n + x
-
-print(x)
+# Achyut Did
 
 >>>>>>> 3d8cae25d72ad031db9723c19e660b831a405bce
