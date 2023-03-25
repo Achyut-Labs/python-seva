@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-=======
+
 '''
 Calculate the sum of all numbers from 1 to a given number
 Write a program to accept a number from a user and calculate the sum of all numbers from 1 to a given number
@@ -17,4 +16,4 @@ for n in range(1, int(input)+1):
 
 print(x)
 
->>>>>>> 3d8cae25d72ad031db9723c19e660b831a405bce
+
