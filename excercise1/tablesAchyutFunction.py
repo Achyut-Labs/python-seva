@@ -27,6 +27,6 @@ multiplyNum = range(1,13)
 
 
 for thing in multiplyNum:
-    num = m(input, x)
+    num = m(input, thing)
     print(input,'x',thing,'=',num)
     
