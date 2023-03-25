@@ -5,3 +5,12 @@ Write a program to accept a number from a user and calculate the sum of all numb
 For example, if the user entered 10 the output should be 55 (1+2+3+4+5+6+7+8+9+10)
 '''
 
+
+input = input('Enter a number:')
+
+x = 0
+
+for n in range(1, int(input) +1):
+    x = x + n
+
+print(x)
