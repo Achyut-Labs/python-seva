@@ -6,8 +6,6 @@ For example, if the user entered 10 the output should be 55 (1+2+3+4+5+6+7+8+9+1
 <<<<<<< HEAD
 
 '''
-=======
-'''
 
 # Achyut Did This
 input = input('Enter a number: ')
@@ -20,4 +18,4 @@ for n in range(1, int(input)+1):
 
 
 print(x)
->>>>>>> b0ceff35694ded5a00d686b60444e42e959c7313
+
