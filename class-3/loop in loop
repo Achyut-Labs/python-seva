@@ -1,15 +1,14 @@
-<<<<<<< HEAD
+
 x=('monday,' 'tuesday,' 'wednesday')
 for y in x:
     print(y)
     for z in y:
         print(z)
     
-=======
+
 x= ('monday','tuesday','wednesday')
 
 for y in x:
   print(y)
   for z in y:
     print(z)
->>>>>>> e813a859ea3c3977d16b77d56693ceeb00796dea
