@@ -9,3 +9,6 @@ defaults = {"designation": 'Developer', "salary": 8000}
 Expected output:
 
 {'Kelly': {'designation': 'Developer', 'salary': 8000}, 'Emma': {'designation': 'Developer', 'salary': 8000}}
+
+'''
+
