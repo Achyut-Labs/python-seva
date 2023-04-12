@@ -14,3 +14,5 @@ Expected output:
 '''
 
 
+dict = dict(zip(keys, values))
+print(dict)
