@@ -2,7 +2,7 @@
 y = ("monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday")
 
 
-for y in x:
+for x in y:
     print(y)
 print(y)
 
