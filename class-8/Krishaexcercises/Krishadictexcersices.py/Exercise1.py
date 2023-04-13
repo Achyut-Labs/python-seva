@@ -13,4 +13,4 @@ keys = ['Ten', 'Twenty', 'Thirty']
 values = [10, 20, 30]
 
 together = dict(zip(keys, values))  #together (variable) is what outcome we need to print and dict equals to dictionary
-print(together)                     
+print(together)                     #zip makes the key and values come together to create the variable together.       
