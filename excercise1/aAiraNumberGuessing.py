@@ -13,11 +13,11 @@ def show_score():
       print('There is currently no high score, it\'s yours for the taking!')
 
   else:
-      print(f'The current high score is {min(attempts_list)} attempts')
+      print(f'The current high score is {min(attempts_list)} attempts') # The letter 'f' inside a a bracket allows you to add a variable into the print statement.
 
 def start_game():
    attempts = 0
-   rand_num = random.randint(1, 10)
+   rand_num = random.randint(1, 10) #randint means a random integer
    print('Hello traveler! Welcome to the game of guesses!')
    player_name = input('What is your name? ')
    wanna_play = input(
@@ -45,7 +45,7 @@ def start_game():
                wanna_play = input(
                    'Would you like to play again? (Enter Yes/No): ')
                if wanna_play.lower() != 'yes':
-                   print('That\'s cool, have a good one!')
+                   print('That\'s cool, have a good one!') # The slash in ' That's ' is just to allow the apostrophe because python only understands alphanumeric values. So the slash just helps the computer to accept the apostrophe.
                    break
                else:
                    attempts = 0
@@ -54,9 +54,9 @@ def start_game():
                    continue
         else:
              if guess > rand_num:
-                   print('It\'s lower')
+                   print('It\'s lower') # same here with the slash :)
              elif guess < rand_num:
-                   print('It\'s higher')
+                   print('It\'s higher') # also the same here with the slash... you get idea :)
         
 
 
