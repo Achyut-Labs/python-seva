@@ -13,7 +13,7 @@ def show_score():
 
 def start_game():
    attempts = 0
-   rand_num = random.randint(1, 10)
+   rand_num = random.randint(1, 100)
    print('Hello traveler! Welcome to the game of guesses!')
    player_name = input('What is your name? ')
    wanna_play = input(
@@ -28,8 +28,8 @@ def start_game():
 
    while wanna_play.lower() == 'yes':
        try:
-           guess = int(input('Pick a number between 1 and 10: '))
-           if guess < 1 or guess > 10:
+           guess = int(input('Pick a number between 1 and 100: '))
+           if guess < 1 or guess > 100:
                raise ValueError(
                    'Please guess a number within the given range')
 
