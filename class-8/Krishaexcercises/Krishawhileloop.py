@@ -1,4 +1,4 @@
-max = 10                             #max = 5 so the maxiumum number the code will go up to is 10 and counter is  
+max = 10                             #max = 1 so the maxiumum number the code will go up to is 10 and counter is  
 counter = 0                         #a variable name of 0. 
 
 while counter < max:                #while 0 is less than 10, the code will print numbers and when it says counter += 1,
