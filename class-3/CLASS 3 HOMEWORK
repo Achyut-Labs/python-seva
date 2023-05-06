@@ -24,7 +24,7 @@ for y in x:
 print(y)
 
 for y in x:
-    for x in y:
+    for i in y:
       print(x)
 print(x)
 
