@@ -37,7 +37,10 @@ def play_rps():
 
        user_choice = input('Choose your weapon'
                            ' [R]ock], [P]aper, or [S]cissors: ')
-
+       if len(user_choice) > 1:
+           print("Your Input is not correct, start game again")
+           check_play_status()
+       
        if not re.match("[SsRrPp]", user_choice):
            print('Please choose a letter:')
            print('[R]ock, [P]aper, or [S]cissors')
@@ -49,6 +52,8 @@ def play_rps():
        opp_choice = random.choice(choices)
 
        print(f'I chose: {opp_choice}')
+       
+    
 
        if opp_choice == user_choice.upper():
            print('Tie!')
