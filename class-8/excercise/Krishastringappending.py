@@ -9,3 +9,12 @@ z=appendString(a,b)                   #z equals to combined string of a and b.
 print(z)                              #the answer 
 
 
+
+x=input("what you want in list")        #this is another way
+list = {}                              
+ 
+def app(x):                           
+    list.append(x)
+
+app(input) 
+print(list)
