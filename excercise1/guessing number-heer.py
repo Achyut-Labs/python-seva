@@ -11,14 +11,13 @@ attempts_list = []
 def show_score():
   if not attempts_list:
       print('There is currently no high score, it\'s yours for the taking!')
-
   else:
       print(f'The current high score is {min(attempts_list)} attempts')
 
 
-def start_game():
+def start_game(): 
    attempts = 0
-   rand_num = random.randint(1, 1000)
+   rand_num = random.randint(1, 10)
    print('Hello traveler! Welcome to the game of guesses!')
    player_name = input('What is your name? ')
    wanna_play = input(
@@ -32,11 +31,11 @@ def start_game():
        show_score()
 
    while wanna_play.lower() == 'yes':
-       try:
-           guess = int(input('Pick a number between 1 and 1000: '))
-           if guess < 1 or guess > 1000:
-               raise ValueError(
-                   'Please guess a number within the given range')
+       try:   
+           guess = int(input('Pick a number between 1 and 10; ')) 
+           if guess < 1 or guess > 10:
+                raise ValueError(
+                     'Please guess a number within the given range')
 
            attempts += 1
            attempts_list.append(attempts)
@@ -50,8 +49,8 @@ def start_game():
                    print('That\'s cool, have a good one!')
                    break
                else:
-                   attempts = 0
-                   rand_num = random.randint(1, 1000)
+                   attempts = 1
+                   rand_num = random.randint(1, 10) 
                    show_score()
                    continue
            else:
