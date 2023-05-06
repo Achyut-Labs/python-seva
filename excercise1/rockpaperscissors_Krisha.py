@@ -5,8 +5,8 @@ Rock Paper Scissors
 
 
 import random
-import os
-import re
+import os                         #library called 
+import re                         #library called regular expression 
 
 
 def check_play_status():
@@ -63,7 +63,7 @@ def play_rps():
            print('Paper beats rock, I win!')
            play = check_play_status()
        else:
-           print('You win!\n')
+           print('You win!\n')          #/n means new line
            play = check_play_status()
 
 
