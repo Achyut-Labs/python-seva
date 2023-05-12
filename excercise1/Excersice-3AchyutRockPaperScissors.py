@@ -38,8 +38,8 @@ def play_rps():
        user_choice = input('Choose your weapon'
                            ' [R]ock], [P]aper, or [S]cissors: ')
        if len(user_choice) > 1:
-           print("Your Input is not correct, start game again")
-           check_play_status()
+           print("Your Input is not correct, choose a valid option.")
+           play_rps()
        
        if not re.match("[SsRrPp]", user_choice):
            print('Please choose a letter:')
