@@ -18,6 +18,7 @@ def check_play_status():
 
           if response.lower() == 'yes':
               return True
+          else:
               os.system('cls' if os.name == 'nt' else 'clear')
               print('Thanks for playing!')
               exit()
