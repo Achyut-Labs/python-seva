@@ -8,7 +8,6 @@ import random
 import os
 import re
 
-
 def check_play_status():
   valid_responses = ['yes', 'no']
   while True:
@@ -19,7 +18,6 @@ def check_play_status():
 
           if response.lower() == 'yes':
               return True
-          else:
               os.system('cls' if os.name == 'nt' else 'clear')
               print('Thanks for playing!')
               exit()
