@@ -31,7 +31,7 @@ def check_play_status():
 def play_rps():
    play = True
    while play:
-       os.system('cls' if os.name == 'nt' else 'clear')
+       #os.system('cls' if os.name == 'nt' else 'clear')
        print('')
        print('Rock, Paper, Scissors - Shoot!')
 
