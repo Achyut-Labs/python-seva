@@ -3,7 +3,7 @@ import myMaths
 def calcStatus():
     while True:
         answer = input("do you want to play again?(valid response (yes or no):")
-        if answer == 'yes':
+        if answer == 'yes': 
             main()    
         elif answer == 'no':
             exit()
@@ -16,10 +16,10 @@ def main():
     a = int(input("Enter your first numbers for maths"))
     b = int(input("Enter your second number for maths"))
 
-    print(myMaths.myAddition(a , b)) 
-    print(myMaths.mySubtraction(a , b))
-    print(myMaths.myMultiplication(a , b))
-    print(myMaths.myDivision(a , b))
+    print('Addition:',myMaths.myAddition(a , b)) 
+    print( 'Subtraction:',myMaths.mySubtraction(a , b))
+    print( 'Multiplication:',myMaths.myMultiplication(a , b))
+    print( 'Division:',myMaths.myDivision(a , b))
     calcStatus()
 
 
