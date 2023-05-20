@@ -2,7 +2,7 @@ import myMaths
 
 def calcStatus():
     while True:
-        answer = input("do you want to play again?")
+        answer = input("do you want to play again?(valid response (yes or no):")
         if answer == 'yes':
             main()    
         elif answer == 'no':
