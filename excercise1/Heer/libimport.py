@@ -2,13 +2,13 @@ import myMaths
 
 def calcStatus():
     while True:
-        answer = input("do you want to play?")
+        answer = input("do you want to play again?")
         if answer == 'yes':
             main()    
         elif answer == 'no':
             exit()
         else:
-            print("dont understand")
+            print("please enter a vaild value. (yes or no)")
 
 
 def main():
