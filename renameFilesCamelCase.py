@@ -9,7 +9,6 @@ from re import sub
 import os
 import pathlib as pl
 
-
 # creating a function which will convert string to camelcase
 def convertToCamelCase(myString):
     myString = sub(r"(_|-)+", " ", myString).title().replace(" ", "")
@@ -26,7 +25,7 @@ def listFilesRecursive(path):
     # r = root, d = directories, f = files
     for r, d, f in os.walk(path):
         for dir in ignoreDirs:
-            for dir in d:
+            if dir in d:
                 d.remove(dir)
         for file in f:
             files.append(os.path.join(r, file))
@@ -39,11 +38,14 @@ def main():
     path = './'
     # files = os.listdir(path)
     files = listFilesRecursive(path)
-    print(files)
     for index, file in enumerate(files):
         if pl.Path(file).suffix and pl.Path(file).suffix == '.py':
-            # a = convertToCamelCase(file)
-            print(file)
+            renamedFile = convertToCamelCase(pl.Path(file).name)
+            print(pl.Path(file))
+            print(pl.Path(file).parent)
+            renamedFilePath = pl.Path.joinpath(pl.Path(file).parent, renamedFile)
+
+            os.rename(pl.Path(file), renamedFilePath)
 
 
 if __name__ == "__main__":
