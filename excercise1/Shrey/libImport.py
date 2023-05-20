@@ -3,8 +3,10 @@ import myMaths
 
 def main():
     print("We are doing mathamathics")
+
+    true = True
     
-    while True:
+    while true:
         print("Are you ready to play the math game")
         a = int(input("Enter your number for maths: "))
         b = int(input("Enter your second number for maths: "))
@@ -18,13 +20,15 @@ def main():
     
 
     
-        choice = input("Enter 'exit' to exit or press Enter to continue: ")
+        choice = input("Enter 'no' to exit or Enter 'yes' to continue: ")
 
         if choice.lower() == "exit":
             break
+        elif choice .lower() == "yes":
+            pass
+        else:
+            exit()
 
-        if input == "no":
-            break  
     
         
         
