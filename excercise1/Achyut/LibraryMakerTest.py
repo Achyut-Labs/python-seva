@@ -21,7 +21,7 @@ def main():
     print('Addition: ',myMaths.myAddition(c,d) )
     print( 'Multiplication:', myMaths.myMultiplication(c,d))
     print('Division:', myMaths.myDivision(c,d))
-    print('Sunbtraction:', myMaths.mySubtraction(c,d))
+    print('Subtraction:', myMaths.mySubtraction(c,d))
 
     recall()
 
