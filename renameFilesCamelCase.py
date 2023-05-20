@@ -2,7 +2,7 @@
 Write a program which will convert the all file names into camel Case syntax format.
 Ignore certain files  e.g.  .md, no extension, .gitignore  etc
 Ignore directories e.g.  .venv and .git
-all files withing recursive directory
+all files within recursive directories has to be covered.
 '''
 # importing the module
 from re import sub
