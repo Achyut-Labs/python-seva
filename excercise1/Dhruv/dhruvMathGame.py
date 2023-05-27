@@ -1,6 +1,7 @@
 import myMaths
 def main():
     print("hello we are playing a math game")
+<<<<<<< Updated upstream
 play=True
 
 while play:
@@ -21,6 +22,30 @@ while play:
     print(myMaths.mySubtraction(a,b))
     print("Both numbers divided =")
     print(myMaths.myDivision(a,b))
+=======
+    play=True
+
+    while play:
+     print("would you like play the game?")
+     start=input("yes or no:")
+     if start.lower=="yes":
+       continue
+     if start.lower=="no":
+        play:False
+        
+  
+
+     a=int(input("Enter 1 number for maths:"))
+     b=int(input("Enter another number for maths:"))
+     print("sum of both numbers =")
+     print( myMaths.myAddition(a,b))
+     print("product of both numbers =")
+     print(myMaths.myMultiplication(a,b))
+     print("difference of both numbers =")
+     print(myMaths.mySubtraction(a,b))
+     print("Both numbers divided =")
+     print(myMaths.myDivision(a,b))
+>>>>>>> Stashed changes
 
  
 
@@ -29,5 +54,9 @@ while play:
 
 
 if __name__=='__main__':
+<<<<<<< Updated upstream
     main()
     
+=======
+    main()
+>>>>>>> Stashed changes
