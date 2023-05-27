@@ -1,18 +1,17 @@
 import myMaths
  
-input('Do you want to play a maths game? yes or no: ')
 
-def input():
-    t=True
-    while t:
-     d= input('Do you want to play a game? Enter y/n: ')
-     if d == yes.lower():
-        main()
+def recall():
+    while True:
+        replay= input("Do you want to continue playing the maths game?(yes/no): ")
+        if replay == 'yes':
+            main()
+        elif replay== 'no':
+            break
+        else:
+            print("Your response is unclear. Please type yes or no")
 
-     elif d == yes.lower():
-        t=False
-    else:
-       print(' Please enter [y]es or [n]o')
+
 
 
 def main():
@@ -24,6 +23,7 @@ def main():
     print(myMaths.myMulipilcation(a, b))
     print(myMaths.mySubstraction(a, b))
     print(myMaths.myDivision(a, b))
+    recall()
 
 if __name__ == '__main__':
     main()
