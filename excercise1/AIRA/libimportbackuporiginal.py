@@ -10,8 +10,6 @@ def main(): #refer to line 16 #Ok so we created a a library (libImport), and now
     print(myMaths.myMultiplication(a, b))
     print(myMaths.myDivision(a, b))
 
-
-
 if __name__ == '__main__':
     main() # Ok now refer to line 3
     # Hi. So because it was not called on before we call on it now, by writing main() the commputer will read the programme, go back to line 3, and recall the def main(). After senpai notices line 3, it will also read the rest of the code and actually go through with it. Hope that helps.
