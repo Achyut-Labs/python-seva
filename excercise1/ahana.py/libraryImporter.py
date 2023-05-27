@@ -13,7 +13,5 @@ print(myMaths.mySubtraction(a, b))
 print(myMaths.myMultiplication(a, b))
 print(myMaths.myDivision(a, b))
 
-
-
 if __name__ == '__main__':
     main()
