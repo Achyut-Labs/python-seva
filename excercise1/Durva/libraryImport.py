@@ -9,7 +9,7 @@ def input():
      if d == yes.lower():
         main()
 
-     elif d == no.lower():
+     elif d == yes.lower():
         t=False
     else:
        print(' Please enter [y]es or [n]o')
