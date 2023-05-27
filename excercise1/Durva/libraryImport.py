@@ -15,7 +15,7 @@ def recall():
 
 
 def main():
-    print('My Pal Cal')
+    print('My Cal Game')
     a = int(input("Enter your first number for maths: "))
     b = int(input("Enter your second number for maths: "))
 
