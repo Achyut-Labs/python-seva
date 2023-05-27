@@ -8,6 +8,5 @@ def main():
     print(Mymaths.mySubtraction(a,b))
     print(Mymaths.myDivision(a,b))
 
-
 if __name__=='__main__':
     main()                     
