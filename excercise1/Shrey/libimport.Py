@@ -1,4 +1,4 @@
-import myaths
+import myMaths
 
 
 def main():
