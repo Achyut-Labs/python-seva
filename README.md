@@ -1,6 +1,6 @@
 # Python - Journey to Programming World
 
-Pyton is most famous programming language in industry as well as academic world.
+Python is most famous programming language in industry as well as academic world.
 
 Here we are attempting to make amazing attempt to make every one learn python through practical
 way and no other place to look for any concept.
@@ -16,6 +16,6 @@ https://pythontutor.com/
 https://www.pythontutorial.net/  
 https://www.w3schools.com/python/default.asp
 
-
 # For Excercises
+
 https://pynative.com/
