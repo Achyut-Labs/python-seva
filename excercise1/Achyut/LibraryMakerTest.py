@@ -12,10 +12,12 @@ def recall():
             print('please inserst a valid value y or n')
 
 
+def ChackValue():
+    pass
+
 def main():
     print('The Calculator.')
     c = int(input('enter you number for maths: '))
-     
     d = int(input('enter you second number for maths: '))
 
     print('Addition: ',myMaths.myAddition(c,d) )
