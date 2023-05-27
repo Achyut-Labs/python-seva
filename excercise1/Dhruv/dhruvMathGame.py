@@ -22,12 +22,6 @@ while play:
     print("Both numbers divided =")
     print(myMaths.myDivision(a,b))
 
- 
-
-
-
-
-
 if __name__=='__main__':
     main()
     
