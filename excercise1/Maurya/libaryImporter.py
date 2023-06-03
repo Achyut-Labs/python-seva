@@ -1,4 +1,4 @@
-import myMaths 
+import mymaths 
 
 def calscStatus():
     while True:
@@ -17,10 +17,10 @@ def main():
     a= int(input("Enter your first number"))
     b= int(input("Enter your second number"))
 
-    print(myMaths.myAddition(a, b))
-    print(myMaths.myMultiplication(a, b))
-    print(myMaths.mySubtraction(a, b))
-    print(myMaths.myDivision(a, b)) 
+    print(mymaths.myAddition(a, b))
+    print(mymaths.myMultiplication(a, b))
+    print(mymaths.mySubtraction(a, b))
+    print(mymaths.myDivision(a, b)) 
     calscStatus()
 
 

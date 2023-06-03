@@ -1,9 +1,3 @@
-'''
-Rock Paper Scissors
--------------------------------------------------------------
-'''
-
-
 import random
 import os
 import re
@@ -12,11 +6,11 @@ import re
 def check_play_status():
   valid_responses = ['yes', 'no']
   while True:
-     try:
+      try:
           response = input('Do you wish to play again? (Yes or No): ')
           if response.lower() not in valid_responses:
               raise ValueError('Yes or No only')
-          
+
           if response.lower() == 'yes':
               return True
           else:
@@ -24,7 +18,7 @@ def check_play_status():
               print('Thanks for playing!')
               exit()
 
-     except ValueError as err:
+      except ValueError as err:
           print(err)
 
 
@@ -54,8 +48,8 @@ def play_rps():
            print('Tie!')
            play = check_play_status()
        elif opp_choice == 'R' and user_choice.upper() == 'S':
-         print('Rock beats scissors, I win!')
-         play = check_play_status()
+           print('Rock beats scissors, I win!')
+           play = check_play_status()
        elif opp_choice == 'S' and user_choice.upper() == 'P':
            print('Scissors beats paper! I win!')
            play = check_play_status()
@@ -69,4 +63,3 @@ def play_rps():
 
 if __name__ == '__main__':
    play_rps()
-           
