@@ -31,13 +31,16 @@ def check_play_status():
 def play_rps():
    play = True
    while play:
-       os.system('cls' if os.name == 'nt' else 'clear')
+       #os.system('cls' if os.name == 'nt' else 'clear')
        print('')
        print('Rock, Paper, Scissors - Shoot!')
 
        user_choice = input('Choose your weapon'
                            ' [R]ock], [P]aper, or [S]cissors: ')
-
+       if len(user_choice) > 1:
+           print("Your Input is not correct, choose a valid option.")
+           play_rps()
+       
        if not re.match("[SsRrPp]", user_choice):
            print('Please choose a letter:')
            print('[R]ock, [P]aper, or [S]cissors')
@@ -49,6 +52,8 @@ def play_rps():
        opp_choice = random.choice(choices)
 
        print(f'I chose: {opp_choice}')
+       
+    
 
        if opp_choice == user_choice.upper():
            print('Tie!')
@@ -68,4 +73,8 @@ def play_rps():
 
 
 if __name__ == '__main__':
-   play_rps()
+   play_rps()                    
+   
+
+   
+   
