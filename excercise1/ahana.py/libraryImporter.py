@@ -3,7 +3,7 @@ import re
 import myMaths
 
 def main():
-    print("Hey bro, do you want to use the Mathematics Calculator?")
+    print("Hey dude, do you want to use the Mathematics Calculator?")
 valid_responses = ['yes', 'no']
 a = int(input("Enter your first number for maths"))
 b = int(input("Enter your second number for maths"))
