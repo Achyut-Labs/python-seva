@@ -5,18 +5,17 @@ Rock Paper Scissors
 
 
 import random
-import os                         #library called 
-import re                         #library called regular expression 
-
+import os
+import re
 
 def check_play_status():
   valid_responses = ['yes', 'no']
   while True:
-     try:
+      try:
           response = input('Do you wish to play again? (Yes or No): ')
           if response.lower() not in valid_responses:
               raise ValueError('Yes or No only')
-          
+
           if response.lower() == 'yes':
               return True
           else:
@@ -24,14 +23,14 @@ def check_play_status():
               print('Thanks for playing!')
               exit()
 
-     except ValueError as err:
+      except ValueError as err:
           print(err)
 
 
 def play_rps():
    play = True
    while play:
-       # os.system('cls' if os.name == 'nt' else 'clear')
+       os.system('cls' if os.name == 'nt' else 'clear')
        print('')
        print('Rock, Paper, Scissors - Shoot!')
 
@@ -41,12 +40,12 @@ def play_rps():
        if not re.match("[SsRrPp]", user_choice):
            print('Please choose a letter:')
            print('[R]ock, [P]aper, or [S]cissors')
-       else:
-           
-           
-        user_choice = ['R', 'P', 'S']
-       opp_choice = random.choice(choices) 
-        
+           continue
+
+       print(f'You chose: {user_choice}')
+
+       choices = ['R', 'P', 'S']
+       opp_choice = random.choice(choices)
 
        print(f'I chose: {opp_choice}')
 
@@ -54,8 +53,11 @@ def play_rps():
            print('Tie!')
            play = check_play_status()
        elif opp_choice == 'R' and user_choice.upper() == 'S':
-         print('Rock beats scissors, I win!')
-         play = check_play_status()
+           print('Rock beats scissors, I win!')
+           play = check_play_status()
+              
+           print('You win!\n')
+           
        elif opp_choice == 'S' and user_choice.upper() == 'P':
            print('Scissors beats paper! I win!')
            play = check_play_status()
@@ -63,10 +65,9 @@ def play_rps():
            print('Paper beats rock, I win!')
            play = check_play_status()
        else:
-           print('You win!\n')          #/n means new line
+           print('You win!\n')
            play = check_play_status()
 
 
 if __name__ == '__main__':
    play_rps()
-           
