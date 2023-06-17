@@ -1,14 +1,7 @@
 '''
-Write a program which will convert the all file names into camel Case syntax format.
-Ignore certain files  e.g.  .md, no extension, .gitignore  etc
-Ignore directories e.g.  .venv and .git
-all files within recursive directories has to be covered.
-'''
-''' Improvements - Next TODO list
-- Consider changing the name of the folder
-- Camel case worked only for the words separated before with space or -
-- current filenames are not exactly camel case due to words where not separated
-- check the files without file extensions, need to remove them
+Write a program which will find files on our python-seva folder which do not have extension,
+some files have capital Py extension or no extension.
+See reference renameFilesCamelCase.py
 '''
 
 
@@ -41,6 +34,8 @@ def listFilesRecursive(path):
     lst = [file for file in files]
     return lst
 
+
+#Understood up to here
 
 def main():
     path = './'
