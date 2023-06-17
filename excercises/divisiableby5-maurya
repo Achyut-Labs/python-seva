@@ -1,0 +1,9 @@
+Dog= [14, 15, 25, 33, 90, 60, 48, 11]
+Cat= []
+
+
+for i in Dog:
+    if i % 5 == 0:
+        Cat.append(i)
+
+print(Cat)
