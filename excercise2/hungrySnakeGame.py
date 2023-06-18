@@ -82,6 +82,7 @@ def move_snake():
 
 
         screen.update()
+        # Understand upto here
 
         turtle.ontimer(move_snake, delay) # ???
 
