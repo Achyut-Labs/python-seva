@@ -27,8 +27,10 @@ def listFilesRecursive(path):
     Function that receives as a parameter a directory path
     :return list_: File List and Its Absolute Paths
     """
+
     files = []
     ignoreDirs = [".venv", ".git"]
+
 
     # r = root, d = directories, f = files
     for r, d, f in os.walk(path):
@@ -47,13 +49,13 @@ def main():
     # files = os.listdir(path)
     files = listFilesRecursive(path)
     for index, file in enumerate(files):
-        if pl.Path(file).suffix and pl.Path(file).suffix == '.py':
-            renamedFile = convertToCamelCase(pl.Path(file).name)
+        if pl.Path(file).suffix == '':
+            # renamedFile = convertToCamelCase(pl.Path(file).name)
             print(pl.Path(file))
-            print(pl.Path(file).parent)
-            renamedFilePath = pl.Path.joinpath(pl.Path(file).parent, renamedFile)
+           # print(pl.Path(file).parent)
+            # renamedFilePath = pl.Path.joinpath(pl.Path(file).parent, renamedFile)
 
-            os.rename(pl.Path(file), renamedFilePath)
+            # os.rename(pl.Path(file), renamedFilePath)
             
 
 def delete():
