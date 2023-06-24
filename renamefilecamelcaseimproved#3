@@ -1,0 +1,8 @@
+import os
+def camelCase(str):
+  return str.replace('-', ' ').title().replace(' ', '')
+for filename in os.listdir('.'):
+  new_filename = camelCase(filename)
+  if new_filename != filename:
+    os.rename(filename, new_filename)
+    
