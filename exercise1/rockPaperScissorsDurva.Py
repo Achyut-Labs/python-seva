@@ -8,7 +8,6 @@ import random
 import os
 import re
 
-
 def check_play_status():
   valid_responses = ['yes', 'no']
   while True:
@@ -27,7 +26,6 @@ def check_play_status():
      except ValueError as err:
           print(err)
 
-
 def play_rps():
    play = True
    while play:
@@ -44,10 +42,8 @@ def play_rps():
            continue
 
        print(f'You chose: {user_choice}')
-
        choices = ['R', 'P', 'S']
        opp_choice = random.choice(choices)
-
        print(f'I chose: {opp_choice}')
 
        if opp_choice == user_choice.upper():
