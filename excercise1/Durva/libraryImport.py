@@ -1,6 +1,5 @@
 import myMaths
  
-
 def recall():
     while True:
         replay= input("Do you want to continue playing the maths game?(yes/no): ")
@@ -10,8 +9,6 @@ def recall():
             break
         else:
             print("Your response is unclear. Please type yes or no")
-
-
 
 
 def main():
