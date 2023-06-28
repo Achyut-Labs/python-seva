@@ -82,6 +82,7 @@ def move_snake():
 
 
         screen.update()
+        # Understand upto here
 
         turtle.ontimer(move_snake, delay) # ???
 
@@ -142,7 +143,7 @@ pen.penup()
 food = turtle.Turtle()
 food.shape("square")
 food.color("yellow")
-food.shapesize(food_size / 20)
+food.shapesize(food_size/20)
 food.penup()
 
 
