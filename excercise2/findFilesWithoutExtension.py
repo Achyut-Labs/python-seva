@@ -22,7 +22,7 @@ def listFilesRecursive(path):
     """
     files = []
     ignoreDirs = [".venv", ".git"]
-    ignorefile = [".gitignore", ".DS_Store"]
+    ignorefile = [".gitignore"]
 
 
     # r = root, d = directories, f = files
@@ -52,6 +52,7 @@ def main():
         if pl.Path(file).suffix == '':
             #renamedFile = convertToCamelCase(pl.Path(file).name)
             print(pl.Path(file))
+            os.remove(file)
             #print(pl.Path(file).parent)
             #renamedFilePath = pl.Path.joinpath(pl.Path(file).parent, renamedFile)
 

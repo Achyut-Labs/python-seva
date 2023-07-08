@@ -18,16 +18,19 @@
 
 
 
-
-import turtle
+#importing libarys
+import turtle 
 import random
 
+#the size of the window, w = width, h = height
 w = 500
 h = 500
+#the size of the food
 food_size = 10
+#it is waiting for ___ seconds
 delay = 100
 
-
+# these are locations on the new screen created
 offsets = {
     "up": (0, 20),
     "down": (0, -20),
@@ -41,7 +44,7 @@ def reset():
     global snake, snake_dir, food_position, pen 
     snake = [[0, 0], [0, 20], [0, 40], [0, 60], [0, 80]] # not sure
     snake_dir = "up" 
-    food_position = get_random_food_position()
+    food_position = get_random_food_position() #making new foods and new locations after you have ate the existing food
     food.goto(food_position)
     move_snake()
 
@@ -53,7 +56,7 @@ def move_snake():
     new_head[1] = snake[-1][1] + offsets[snake_dir][1] # don't under stand this 
 
 
-    if new_head in snake[:-1]:  # [:-1]
+    if new_head in snake[:-1]:  # [:-1] #adding a new head evry time you eat the food
         reset()
     else:
         snake.append(new_head)
@@ -127,32 +130,33 @@ def go_left():
     if snake_dir != "right":
         snake_dir = "left"
 
-
+#creating the screen
 screen = turtle.Screen()
 screen.setup(w, h)
 screen.title("Snake")
-screen.bgcolor("blue")
+screen.bgcolor("grey")
 screen.setup(500, 500)
 screen.tracer(0)
 
 
 pen = turtle.Turtle("square")
 pen.penup()
+pen.shapesize(0.9, 0.9, 1)
 
-
+#creating the food
 food = turtle.Turtle()
 food.shape("square")
 food.color("yellow")
-food.shapesize(food_size/20)
+food.shapesize(food_size/10) #size is 20
 food.penup()
 
-
+#making keys
 screen.listen()
-screen.onkey(go_up, "Up")
-screen.onkey(go_right, "Right")
-screen.onkey(go_down, "Down")
-screen.onkey(go_left, "Left")
+screen.onkey(go_up, "Up") #making up arrow key
+screen.onkey(go_right, "Right") #making right arrow key
+screen.onkey(go_down, "Down") #making down arrow key
+screen.onkey(go_left, "Left") #making left arrow key
 
 
-reset()
+reset() #resarts the program when you die
 turtle.done()
