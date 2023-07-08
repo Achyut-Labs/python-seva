@@ -22,13 +22,13 @@ def listFilesRecursive(path):
     """
     files = []
     ignoreDirs = [".venv", ".git"]
-
+    ignorefile = [".gitignore"]
     # r = root, d = directories, f = files
     for r, d, f in os.walk(path):
         for dir in ignoreDirs:
             if dir in d:
                 d.remove(dir)
-        for file in f:
+        for file in f: 
             files.append(os.path.join(r, file))
 
     lst = [file for file in files]
@@ -43,12 +43,12 @@ def main():
     files = listFilesRecursive(path)
     for index, file in enumerate(files):
         if pl.Path(file).suffix and pl.Path(file).suffix == '.py':
-            renamedFile = convertToCamelCase(pl.Path(file).name)
+            #renamedFile = convertToCamelCase(pl.Path(file).name)
             print(pl.Path(file))
-            print(pl.Path(file).parent)
-            renamedFilePath = pl.Path.joinpath(pl.Path(file).parent, renamedFile)
+            #print(pl.Path(file).parent)
+            #renamedFilePath = pl.Path.joinpath(pl.Path(file).parent, renamedFile)
 
-            os.rename(pl.Path(file), renamedFilePath)
+            #os.rename(pl.Path(file), renamedFilePath)
             
 
 def delete():
