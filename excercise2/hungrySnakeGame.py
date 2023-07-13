@@ -19,27 +19,24 @@
 
  
 
-import turtle
-import random
-
-w = 500
-h = 500
-food_size = 10
-delay = 100
+import turtle #We are importing turtle
+import random #We are importing ramdom
+w = 700 #this is the with of the size of the grafh
+h = 700 #this is the lenth of the screen
+food_size = 20 #this the size of the food 
+delay = 100 # this is delay of the snake
 
 
 offsets = {
     "up": (0, 20),
     "down": (0, -20),
-    "left": (-20, 0),
+    "left": (-20, 0),  #all of the offsets
     "right": (20, 0)
 }
 
-# uderstand up to here
-
 def reset():
     global snake, snake_dir, food_position, pen 
-    snake = [[0, 0], [0, 20], [0, 40], [0, 60], [0, 80]] # not sure
+    snake = [[0, 0], [0, 20], [0, 40], [0, 60], [0, 80]]
     snake_dir = "up" 
     food_position = get_random_food_position()
     food.goto(food_position)
@@ -50,10 +47,10 @@ def move_snake():
 
     new_head = snake[-1].copy()
     new_head[0] = snake[-1][0] + offsets[snake_dir][0]
-    new_head[1] = snake[-1][1] + offsets[snake_dir][1] # don't under stand this 
+    new_head[1] = snake[-1][1] + offsets[snake_dir][1] 
 
 
-    if new_head in snake[:-1]:  # [:-1]
+    if new_head in snake[:-1]:
         reset()
     else:
         snake.append(new_head)
@@ -82,9 +79,8 @@ def move_snake():
 
 
         screen.update()
-        # Understand upto here
 
-        turtle.ontimer(move_snake, delay) # ???
+        turtle.ontimer(move_snake, delay)
 
 def food_collision():
     global food_position
@@ -106,7 +102,6 @@ def get_distance(pos1, pos2):
 
     return distance
 
-#Mostly understand from here.
 def go_up():
     global snake_dir
     if snake_dir != "down":
@@ -131,18 +126,18 @@ def go_left():
 screen = turtle.Screen()
 screen.setup(w, h)
 screen.title("Snake")
-screen.bgcolor("blue")
-screen.setup(500, 500)
+screen.bgcolor("red")
+screen.setup(700, 700)
 screen.tracer(0)
 
 
-pen = turtle.Turtle("square")
+pen = turtle.Turtle("triangle")
 pen.penup()
 
 
 food = turtle.Turtle()
-food.shape("square")
-food.color("yellow")
+food.shape("circle")
+food.color("green")
 food.shapesize(food_size/20)
 food.penup()
 
