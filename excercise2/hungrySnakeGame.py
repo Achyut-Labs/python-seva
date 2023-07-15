@@ -136,7 +136,7 @@ screen.setup(w, h)
 screen.title("Snake")
 screen.bgcolor("grey")
 screen.setup(500, 500)
-screen.tracer(0)
+screen.tracer(20)
 
 
 pen = turtle.Turtle("square")
