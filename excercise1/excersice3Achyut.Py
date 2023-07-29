@@ -72,9 +72,9 @@ def play_rps():
            play = check_play_status()
 
 
-if __name__ == '__main__':
    play_rps()                    
    
 
    
    
+   play_rps()
