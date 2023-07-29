@@ -89,6 +89,7 @@ def food_collision():
     global food_position
     if get_distance(snake[-1], food_position) < 20:
         food_position = get_random_food_position()
+
         food.goto(food_position)
         return True
     return False
