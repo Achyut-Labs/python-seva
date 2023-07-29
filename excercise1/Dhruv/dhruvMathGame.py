@@ -1,5 +1,4 @@
-import myMaths
-<<<<<<< Updated upstream
+import mymaths
 
 def main():
     print("hello we are playing a math game")
@@ -23,7 +22,7 @@ def main():
         if start.lower() == "no":
             play=False
             
-=======
+
 def main():
     print("hello we are playing a math game")
 play=True
@@ -47,7 +46,7 @@ while play:
     print("Both numbers divided =")
     print(myMaths.myDivision(a,b))
 
->>>>>>> Stashed changes
+
 if __name__=='__main__':
     main()
     
