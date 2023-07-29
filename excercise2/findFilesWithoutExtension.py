@@ -12,7 +12,7 @@ import pathlib as pl
 
 # creating a function which will convert string to camelcase
 def convertToCamelCase(myString):
-    myString = sub(r"(_|-)+", " ", myString).title().replace(" ", "")
+    myString = sub(r"(_|-)+", " ", myString).title().replace("", "")
     return myString[0].lower() + myString[1:]
 
 def listFilesRecursive(path):
@@ -22,12 +22,13 @@ def listFilesRecursive(path):
     """
     files = []
     ignoreDirs = [".venv", ".git"]
+    ignorefile = ['.gitignore']
 
     # r = root, d = directories, f = files
     for r, d, f in os.walk(path):
         for dir in ignoreDirs:
             if dir in d:
-                d.remove(dir)
+                 d.remove(dir)
         for file in f:
             files.append(os.path.join(r, file))
 
@@ -42,13 +43,14 @@ def main():
     # files = os.listdir(path)
     files = listFilesRecursive(path)
     for index, file in enumerate(files):
-        if pl.Path(file).suffix and pl.Path(file).suffix == '.py':
-            renamedFile = convertToCamelCase(pl.Path(file).name)
+        if pl.Path(file).suffix == '':
+            # renamedFile = convertToCamelCase(pl.Path(file).name)
             print(pl.Path(file))
-            print(pl.Path(file).parent)
-            renamedFilePath = pl.Path.joinpath(pl.Path(file).parent, renamedFile)
+            os.remove(file)
+            # print(pl.Path(file).parent)
+            # renamedFilePath = pl.Path.joinpath(pl.Path(file).parent, renamedFile)
 
-            os.rename(pl.Path(file), renamedFilePath)
+            # os.rename(pl.Path(file), renamedFilePath)
             
 
 def delete():
