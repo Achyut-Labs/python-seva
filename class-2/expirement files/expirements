@@ -1,8 +1,0 @@
-x = "my first day of school was good"
-
-
-print(x[16:22]) 
-for y in x:
-     print(y)
-print(y)
-
