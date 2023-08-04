@@ -1,3 +1,22 @@
+'''
+Windows:
+MySQL Installer
+https://dev.mysql.com/downloads/mysql/
+
+MySQL Client
+https://dbeaver.io/download/
+https://www.heidisql.com/download.php
+
+
+Mac:
+MySQL Installer
+https://dev.mysql.com/downloads/mysql/
+
+MySQL client
+https://dbeaver.io/download/
+
+'''
+
 import mysql.connector
 
 
