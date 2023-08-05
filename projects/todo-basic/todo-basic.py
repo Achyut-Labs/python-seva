@@ -10,6 +10,11 @@ def addTask(t):
 def listTask():
    print(tasks)
 
+# a function named add_task that will add task in the list of disctionary with user and task
+def add_task(user, task):
+    pass
+
+
 
 def main():
 
