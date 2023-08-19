@@ -1,12 +1,23 @@
 '''
 Rock Paper Scissors
 -------------------------------------------------------------
+1. Rock beats Scissors
+2. Paper beats Rock
+3. Scissors beats paper
+4. If same value then its tie
+5.  It should allow only one letter as input
+6. Only 2 people can play the game
 '''
 
 
 import random
 import os
 import re
+
+{
+   print("djslkdjlskjd")
+}
+
 
 def check_play_status():
   valid_responses = ['yes', 'no']
@@ -55,9 +66,6 @@ def play_rps():
        elif opp_choice == 'R' and user_choice.upper() == 'S':
            print('Rock beats scissors, I win!')
            play = check_play_status()
-              
-           print('You win!\n')
-           
        elif opp_choice == 'S' and user_choice.upper() == 'P':
            print('Scissors beats paper! I win!')
            play = check_play_status()
