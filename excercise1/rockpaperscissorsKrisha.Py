@@ -5,8 +5,8 @@ Rock Paper Scissors
 
 
 import random
-import os
-import re
+import os                         #library called 
+import re                         #library called regular expression 
 
 
 def check_play_status():
@@ -31,7 +31,7 @@ def check_play_status():
 def play_rps():
    play = True
    while play:
-       os.system('cls' if os.name == 'nt' else 'clear')
+       # os.system('cls' if os.name == 'nt' else 'clear')
        print('')
        print('Rock, Paper, Scissors - Shoot!')
 
@@ -41,12 +41,12 @@ def play_rps():
        if not re.match("[SsRrPp]", user_choice):
            print('Please choose a letter:')
            print('[R]ock, [P]aper, or [S]cissors')
-           continue
-
-       print(f'You chose: {user_choice}')
-
-       choices = ['R', 'P', 'S']
-       opp_choice = random.choice(choices)
+       else:
+           
+           
+        user_choice = ['R', 'P', 'S']
+       opp_choice = random.choice(choices) 
+        
 
        print(f'I chose: {opp_choice}')
 
@@ -63,7 +63,7 @@ def play_rps():
            print('Paper beats rock, I win!')
            play = check_play_status()
        else:
-           print('You win!\n')
+           print('You win!\n')          #/n means new line
            play = check_play_status()
 
 
