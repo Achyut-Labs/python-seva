@@ -6,7 +6,7 @@ filename = input("Input the Filename: ")
 file_extensions = filename.split(".")
 print ("The extension of the file is : " + repr(file_extensions[-1]))
 
-# filename is a variable and is the input of a filename the operator puts in
+# filename is a variable and is the input of a filename the operator puts in.
 # file extensions is the python programming language the programmer used and can exmples are py, java,band pyi
 # second line of code is saying that the file extensions are found by splitting the filename at the '.'
 # repr is to print a readable version of a string 
