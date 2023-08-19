@@ -30,11 +30,19 @@ def listFilesRecursive(path):
         for dir in ignoreDirs:
             if dir in d:
                 d.remove(dir)
+<<<<<<< HEAD
                 
         for file in ignorefile:
             if file in f:
                 f.remove(file)
                     
+=======
+
+        for file in ignorefile:
+            if file in f:
+                f.remove(file)
+
+>>>>>>> main
         for file in f:
             files.append(os.path.join(r, file))
 
@@ -52,11 +60,20 @@ def main():
         if pl.Path(file).suffix == '':
             #renamedFile = convertToCamelCase(pl.Path(file).name)
             print(pl.Path(file))
+<<<<<<< HEAD
             #print(pl.Path(file).parent)
             #renamedFilePath = pl.Path.joinpath(pl.Path(file).parent, renamedFile)
 
             #os.rename(pl.Path(file), renamedFilePath)
             
+=======
+            os.remove(file)
+            #print(pl.Path(file).parent)
+            #renamedFilePath = pl.Path.joinpath(pl.Path(file).parent, renamedFile)
+
+            #os.rename(pl.Path(file), renamedFilePath)
+
+>>>>>>> main
 
 def delete():
     pass
