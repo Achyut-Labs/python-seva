@@ -2,7 +2,7 @@ HOW DOES GITHUB WORK:
 -
 →
 
-*SCM- SOURCE CODE MANAGEMENT
+# SCM- SOURCE CODE MANAGEMENT
 →Github is known as a SCM Tool
 
 →We have a Server and a Local
