@@ -7,6 +7,10 @@ Rock Paper Scissors
 import random
 import os
 import re
+<<<<<<< Updated upstream:excercise1/rockpaperscissorsHeer..Py
+=======
+
+>>>>>>> Stashed changes:excercise1/rockpaperscissorskrisha.py
 
 def check_play_status():
   valid_responses = ['yes', 'no']
