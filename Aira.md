@@ -5,7 +5,7 @@ HOW DOES GITHUB WORK:
 # SCM- SOURCE CODE MANAGEMENT
 →Github is known as a SCM Tool
 
-→We have a Server and a Local
+→We have a **Server** and a **Local**
 
 Our server is Github.com
 SERVER: GITHUB.COM
@@ -19,7 +19,7 @@ SERVER: GITHUB.COM
              BRANCHES
 
 
-LOCAL: Our branch is known as Local
+# OUR BRANCH IS KNOWN AS LOCAL
 
 Under Local we have:
 
