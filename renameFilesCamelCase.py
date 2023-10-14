@@ -54,10 +54,6 @@ def main():
             renamedFilePath = pl.Path.joinpath(pl.Path(file).parent, renamedFile)
 
             os.rename(pl.Path(file), renamedFilePath)
-            
-
-def delete():
-    pass
 
 
 if __name__ == "__main__":
