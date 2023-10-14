@@ -13,7 +13,7 @@ Output : java
 
 nameOfFileName = input("Input the Filename: ")
 getExtension = nameOfFileName.split(".")
-print ("The extension of the file is: " + getExtension[1])
+print ("The extension of the file is: " + repr(getExtension[1]))
 '''
 
 2. Write a Python program to display the first and last colors from the following list.
