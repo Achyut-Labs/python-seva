@@ -1,0 +1,1 @@
+print("Adhya Likes You")
