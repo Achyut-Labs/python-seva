@@ -26,16 +26,21 @@ import mysql.connector
 mydb = mysql.connector.connect(
   host="localhost",
   user="root",
+<<<<<<< HEAD
   password="Maurya2009",
+=======
+  password="Achyut321",
+>>>>>>> main
   database="todo"
 )
 
 mycursor = mydb.cursor()
 
-mycursor.execute("CREATE TABLE customers (id INT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(255), address VARCHAR(255))")
+#mycursor.execute("CREATE TABLE customers (id INT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(255), address VARCHAR(255))")
 
 
-mycursor.execute("ALTER TABLE customers ADD COLUMN id INT AUTO_INCREMENT PRIMARY KEY")
+#
+# mycursor.execute("ALTER TABLE customers ADD COLUMN id INT AUTO_INCREMENT PRIMARY KEY")
 
 sql = "INSERT INTO customers (name, address) VALUES (%s, %s)"
 val = [
