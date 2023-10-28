@@ -33,7 +33,11 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
+<<<<<<< HEAD
 set -gx VIRTUAL_ENV "/Users/durvapatel/Documents/GitHub/python-seva/.venv"
+=======
+set -gx VIRTUAL_ENV "/Users/smrutipatel/Desktop/pythonclass/python-seva/.venv"
+>>>>>>> main
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH

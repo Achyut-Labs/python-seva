@@ -38,7 +38,11 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
+<<<<<<< HEAD
 VIRTUAL_ENV="/Users/durvapatel/Documents/GitHub/python-seva/.venv"
+=======
+VIRTUAL_ENV="/Users/smrutipatel/Desktop/pythonclass/python-seva/.venv"
+>>>>>>> main
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

@@ -1,5 +1,5 @@
 {
-    "python.analysis.extraPaths": [
-        "./excercise1/Achyut"
+    "githubPullRequests.ignoredPullRequestBranches": [
+        "main"
     ]
 }
