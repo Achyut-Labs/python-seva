@@ -1,0 +1,3 @@
+[console_scripts]
+snapchat-dl = snapchat_dl.app:main
+
