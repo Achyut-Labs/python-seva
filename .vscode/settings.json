@@ -1,0 +1,5 @@
+{
+    "python.analysis.extraPaths": [
+        "./excercise1/Achyut"
+    ]
+}

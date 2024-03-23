@@ -1,1 +1,0 @@
-print("Adhya Likes You")

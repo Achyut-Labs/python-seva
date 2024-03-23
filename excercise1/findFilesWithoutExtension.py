@@ -12,7 +12,7 @@ import pathlib as pl
 
 # creating a function which will convert string to camelcase
 def convertToCamelCase(myString):
-    myString = sub(r"(_|-)+", " ", myString).title().replace(" ", "")
+    myString = sub(r"(_|-)+", " ", myString).title().replace("", "")
     return myString[0].lower() + myString[1:]
 
 def listFilesRecursive(path):
@@ -22,13 +22,24 @@ def listFilesRecursive(path):
     """
     files = []
     ignoreDirs = [".venv", ".git"]
+
+
+    ignorefile = ['.gitignore']
+
     ignorefile = [".gitignore", ".DS_Store"]
+
 
 
     # r = root, d = directories, f = files
     for r, d, f in os.walk(path):
         for dir in ignoreDirs:
             if dir in d:
+<<<<<<< HEAD:excercise2/findFilesWithoutExtension.py
+
+d.remove(dir)
+
+d.remove(dir)
+=======
                 d.remove(dir)
 <<<<<<< HEAD:excercise1/findFilesWithoutExtension.py
                 
@@ -37,12 +48,17 @@ def listFilesRecursive(path):
                 f.remove(file)
                     
 =======
+>>>>>>> main:excercise1/findFilesWithoutExtension.py
 
         for file in ignorefile:
             if file in f:
                 f.remove(file)
 
+<<<<<<< HEAD:excercise2/findFilesWithoutExtension.py
+>>>>>>> main
+=======
 >>>>>>> main:excercise2/findFilesWithoutExtension.py
+>>>>>>> main:excercise1/findFilesWithoutExtension.py
         for file in f:
             files.append(os.path.join(r, file))
 
@@ -58,6 +74,16 @@ def main():
     files = listFilesRecursive(path)
     for index, file in enumerate(files):
         if pl.Path(file).suffix == '':
+<<<<<<< HEAD
+            # renamedFile = convertToCamelCase(pl.Path(file).name)
+            print(pl.Path(file))
+            os.remove(file)
+            # print(pl.Path(file).parent)
+            # renamedFilePath = pl.Path.joinpath(pl.Path(file).parent, renamedFile)
+
+            # os.rename(pl.Path(file), renamedFilePath)
+            
+=======
             #renamedFile = convertToCamelCase(pl.Path(file).name)
             print(pl.Path(file))
 <<<<<<< HEAD:excercise1/findFilesWithoutExtension.py
@@ -73,7 +99,11 @@ def main():
 
             #os.rename(pl.Path(file), renamedFilePath)
 
+<<<<<<< HEAD:excercise2/findFilesWithoutExtension.py
+>>>>>>> main
+=======
 >>>>>>> main:excercise2/findFilesWithoutExtension.py
+>>>>>>> main:excercise1/findFilesWithoutExtension.py
 
 def delete():
     pass
