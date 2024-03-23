@@ -50,6 +50,15 @@ def main():
     files = listFilesRecursive(path)
     for index, file in enumerate(files):
         if pl.Path(file).suffix == '':
+<<<<<<< HEAD
+           # renamedFile = convertToCamelCase(pl.Path(file).name)
+            print(pl.Path(file))
+           # print(pl.Path(file).parent)
+            #renamedFilePath = pl.Path.joinpath(pl.Path(file).parent, renamedFile)
+
+           # os.rename(pl.Path(file), renamedFilePath)
+            
+=======
             #renamedFile = convertToCamelCase(pl.Path(file).name)
             print(pl.Path(file))
             os.remove(file)
@@ -58,6 +67,7 @@ def main():
 
             #os.rename(pl.Path(file), renamedFilePath)
 
+>>>>>>> main
 
 def delete():
     pass

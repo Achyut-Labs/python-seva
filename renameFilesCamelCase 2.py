@@ -1,7 +1,14 @@
 '''
-Write a program which will find files on our python-seva folder which do not have extension,
-some files have capital Py extension or no extension.
-See reference renameFilesCamelCase.py
+Write a program which will convert the all file names into camel Case syntax format.
+Ignore certain files  e.g.  .md, no extension, .gitignore  etc
+Ignore directories e.g.  .venv and .git
+all files within recursive directories has to be covered.
+'''
+''' Improvements - Next TODO list
+- Consider changing the name of the folder
+- Camel case worked only for the words separated before with space or -
+- current filenames are not exactly camel case due to words where not separated
+- check the files without file extensions, need to remove them
 '''
 
 
@@ -22,19 +29,12 @@ def listFilesRecursive(path):
     """
     files = []
     ignoreDirs = [".venv", ".git"]
-    ignorefile = [".gitignore", ".DS_Store"]
-
 
     # r = root, d = directories, f = files
     for r, d, f in os.walk(path):
         for dir in ignoreDirs:
             if dir in d:
                 d.remove(dir)
-
-        for file in ignorefile:
-            if file in f:
-                f.remove(file)
-
         for file in f:
             files.append(os.path.join(r, file))
 
@@ -42,22 +42,19 @@ def listFilesRecursive(path):
     return lst
 
 
-#Understood up to here
-
 def main():
     path = './'
     # files = os.listdir(path)
     files = listFilesRecursive(path)
     for index, file in enumerate(files):
-        if pl.Path(file).suffix == '':
-            #renamedFile = convertToCamelCase(pl.Path(file).name)
+        if pl.Path(file).suffix and pl.Path(file).suffix == '.py':
+            renamedFile = convertToCamelCase(pl.Path(file).name)
             print(pl.Path(file))
-            os.remove(file)
-            #print(pl.Path(file).parent)
-            #renamedFilePath = pl.Path.joinpath(pl.Path(file).parent, renamedFile)
+            print(pl.Path(file).parent)
+            renamedFilePath = pl.Path.joinpath(pl.Path(file).parent, renamedFile)
 
-            #os.rename(pl.Path(file), renamedFilePath)
-
+            os.rename(pl.Path(file), renamedFilePath)
+            
 
 def delete():
     pass
