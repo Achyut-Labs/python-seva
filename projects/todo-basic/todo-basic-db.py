@@ -26,7 +26,11 @@ import mysql.connector
 mydb = mysql.connector.connect(
   host="localhost",
   user="root",
+<<<<<<< HEAD
+  password="Maurya2009",
+=======
   password="Achyut321",
+>>>>>>> main
   database="todo"
 )
 
