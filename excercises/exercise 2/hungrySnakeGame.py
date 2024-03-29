@@ -1,4 +1,23 @@
+'''
+Hungry Snake Game in Python
 
+Firstly, we need to install turtle. If you don’t have it already installed, open your cmd and type in the following command.
+
+- for Windows
+C:\Users\Admin>pip install turtle
+Now we will install the random module. The random module is used to generate random numbers. In your cmd type in the following command.
+
+- for Windows
+C:\Users\Admin>pip install random2
+Code and Try it yourself and enjoy the game!
+
+Learn to install Libraries required
+Run the program
+Fix if any bugs
+Explain the program in next class
+
+
+'''
 
 import turtle
 import random
@@ -105,18 +124,18 @@ def go_left():
 screen = turtle.Screen()
 screen.setup(w, h)
 screen.title("Snake")
-screen.bgcolor("indigo")
+screen.bgcolor("blue")
 screen.setup(500, 500)
 screen.tracer(0)
 
 
-pen = turtle.Turtle("circle")
+pen = turtle.Turtle("square")
 pen.penup()
 
 
 food = turtle.Turtle()
-food.shape("circle")
-food.color("teal")
+food.shape("square")
+food.color("yellow")
 food.shapesize(food_size / 20)
 food.penup()
 
