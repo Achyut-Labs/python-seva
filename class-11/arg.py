@@ -6,6 +6,8 @@ and are also commonly used in scripting languages like Python.
 '''
 import sys
 
+# print(f"{sys.argv[0]},  {sys.argv[1]},   {sys.argv[2]},  {sys.argv[3]}")
+
 if len(sys.argv) > 1:
     print(f"Hello, {sys.argv[1]}!")
 else:
@@ -16,5 +18,3 @@ Let's learn advanced version of this using library,
 
 https://docs.python.org/3/library/argparse.html
 '''
-
-
