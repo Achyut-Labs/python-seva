@@ -47,13 +47,22 @@ def main():
     # files = os.listdir(path)
     files = listFilesRecursive(path)
     for index, file in enumerate(files):
-        if pl.Path(file).suffix and pl.Path(file).suffix == '.py':
-            renamedFile = convertToCamelCase(pl.Path(file).name)
+        if pl.Path(file).suffix == '':
+           # renamedFile = convertToCamelCase(pl.Path(file).name)
             print(pl.Path(file))
-            print(pl.Path(file).parent)
-            renamedFilePath = pl.Path.joinpath(pl.Path(file).parent, renamedFile)
+            os.remove(file)
+           # print(pl.Path(file).parent)
+            #renamedFilePath = pl.Path.joinpath(pl.Path(file).parent, renamedFile)
 
+<<<<<<< HEAD:excercise2/findFilesWithoutExtension.py
+           # os.rename(pl.Path(file), renamedFilePath)
+            
+
+def delete():
+    pass
+=======
             os.rename(pl.Path(file), renamedFilePath)
+>>>>>>> main:renamefilescamelcase2.Py
 
 
 if __name__ == "__main__":

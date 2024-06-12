@@ -12,11 +12,11 @@ import re
 def check_play_status():
   valid_responses = ['yes', 'no']
   while True:
-      try:
+     try:
           response = input('Do you wish to play again? (Yes or No): ')
           if response.lower() not in valid_responses:
               raise ValueError('Yes or No only')
-
+          
           if response.lower() == 'yes':
               return True
           else:
@@ -24,9 +24,8 @@ def check_play_status():
               print('Thanks for playing!')
               exit()
 
-      except ValueError as err:
+     except ValueError as err:
           print(err)
-
 
 def play_rps():
    play = True
@@ -44,18 +43,21 @@ def play_rps():
            continue
 
        print(f'You chose: {user_choice}')
-
        choices = ['R', 'P', 'S']
        opp_choice = random.choice(choices)
-
        print(f'I chose: {opp_choice}')
 
        if opp_choice == user_choice.upper():
            print('Tie!')
            play = check_play_status()
        elif opp_choice == 'R' and user_choice.upper() == 'S':
+<<<<<<< HEAD:exercise1/rockPaperScissorsDurva.Py
+         print('Rock beats scissors, I win!')
+         play = check_play_status()
+=======
            print('Rock beats scissors, I win!')
            play = check_play_status()
+>>>>>>> main:excercise3/rockPaperScissorsDurva.Py
        elif opp_choice == 'S' and user_choice.upper() == 'P':
            print('Scissors beats paper! I win!')
            play = check_play_status()

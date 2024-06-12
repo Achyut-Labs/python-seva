@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+#!/Users/durvapatel/Documents/GitHub/python-seva/.venv/bin/python3.11
+=======
 #!/Users/smrutipatel/Desktop/pythonclass/python-seva/.venv/bin/python3.11
+>>>>>>> main
 # -*- coding: utf-8 -*-
 import re
 import sys
