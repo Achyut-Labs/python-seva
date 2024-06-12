@@ -1,4 +1,4 @@
-import myMaths
+import mymaths
 def main():
     print("hello we are playing a math game")
 play=True
@@ -14,13 +14,13 @@ while play:
     a=int(input("Enter 1 number for maths:"))
     b=int(input("Enter another number for maths:"))
     print("sum of both numbers =")
-    print( myMaths.myAddittion(a,b))
+    print( mymaths.myAddition(a,b))
     print("product of both numbers=")
-    print(myMaths.mymultipilycation(a,b))
+    print(mymaths.mymultipilycation(a,b))
     print("difference of both numbers=")
-    print(myMaths.mySubtraction(a,b))
+    print(mymaths.mySubtraction(a,b))
     print("Both numbers divided =")
-    print(myMaths.myDivision(a,b))
+    print(mymaths.myDivision(a,b))
 
 if __name__=='__main__':
     main()

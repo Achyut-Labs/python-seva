@@ -22,6 +22,8 @@
 import turtle
 import random
 
+score=0
+x=1
 w = 500
 h = 500
 food_size = 10
@@ -91,6 +93,7 @@ def food_collision():
     if get_distance(snake[-1], food_position) < 20:
         food_position = get_random_food_position()
         food.goto(food_position)
+        score+x
         return True
     return False
 
@@ -132,8 +135,8 @@ screen = turtle.Screen()
 screen.setup(w, h)
 screen.title("Snake")
 screen.bgcolor("blue")
-screen.setup(500, 500)
 screen.tracer(0)
+turtle.write("in progress")
 
 
 pen = turtle.Turtle("square")
@@ -141,7 +144,7 @@ pen.penup()
 
 
 food = turtle.Turtle()
-food.shape("square")
+food.shape("circle")
 food.color("yellow")
 food.shapesize(food_size/20)
 food.penup()
@@ -152,7 +155,9 @@ screen.onkey(go_up, "Up")
 screen.onkey(go_right, "Right")
 screen.onkey(go_down, "Down")
 screen.onkey(go_left, "Left")
-
+screen.onkey(
+    turtle.speed(speed=10),"space"
+)
 
 reset()
 turtle.done()

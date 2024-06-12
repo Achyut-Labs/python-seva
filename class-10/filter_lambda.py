@@ -8,6 +8,10 @@ iterable - an iterable like sets, lists, tuples etc.
 '''
 
 
-def get_multiples_of_any_number(*args):
-    return list(filter(lambda k: not k % 7, range(*args)))
-print(get_multiples_of_any_number(1,700,2))
+def get_multiples_of_five(a,b,c):
+    return list(filter(lambda k: not k % 7, range(a, b,c)))
+answer=(get_multiples_of_five(0, 700))
+if answer % 2 == 0
+
+
+

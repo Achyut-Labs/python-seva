@@ -1,14 +1,7 @@
 '''
-Write a program which will convert the all file names into camel Case syntax format.
-Ignore certain files  e.g.  .md, no extension, .gitignore  etc
-Ignore directories e.g.  .venv and .git
-all files within recursive directories has to be covered.
-'''
-''' Improvements - Next TODO list
-- Consider changing the name of the folder
-- Camel case worked only for the words separated before with space or -
-- current filenames are not exactly camel case due to words where not separated
-- check the files without file extensions, need to remove them
+Write a program which will find files on our python-seva folder which do not have extension,
+some files have capital Py extension or no extension.
+See reference renameFilesCamelCase.py
 '''
 
 
@@ -29,6 +22,7 @@ def listFilesRecursive(path):
     """
     files = []
     ignoreDirs = [".venv", ".git"]
+    ignorefiles=[".gitignore"]
 
     # r = root, d = directories, f = files
     for r, d, f in os.walk(path):
@@ -42,18 +36,28 @@ def listFilesRecursive(path):
     return lst
 
 
+#Understood up to here
+
 def main():
     path = './'
     # files = os.listdir(path)
     files = listFilesRecursive(path)
     for index, file in enumerate(files):
-        if pl.Path(file).suffix and pl.Path(file).suffix == '.py':
-            renamedFile = convertToCamelCase(pl.Path(file).name)
-            print(pl.Path(file))
-            print(pl.Path(file).parent)
-            renamedFilePath = pl.Path.joinpath(pl.Path(file).parent, renamedFile)
+        if pl.Path(file).suffix == '':
 
-            os.rename(pl.Path(file), renamedFilePath)
+            #renamedFile = convertToCamelCase(pl.Path(file).name)
+            print(pl.Path(file))
+            os.remove(file)
+            #print(pl.Path(file).parent)
+            #renamedFilePath = pl.Path.joinpath(pl.Path(file).parent, renamedFile)
+
+        #os.rename(pl.Path(file), renamedFilePath)
+        
+            
+            
+
+def delete():
+    pass
 
 
 if __name__ == "__main__":
